@@ -12,7 +12,6 @@ const url = process.env.URL;
 
 // Ruta de Health Check
 app.use("/health", (req, res) => res.sendStatus(200));
-app.use('/', routes);
 
 app.use(json());
 app.use(express.static(path.join("public")));
