@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Te Va Gustar</title>
+</head>
+<body class="body-all bg-cover bg-no-repeat">
+    <nav class="flex flex-col lg:flex-row items-center justify-between bg-neutral-950 p-2 shadow-2xl">
+        <div class="flex flex-col lg:flex-row items-center">
+            <img class="lg:w-1/6 w-1/4" src="https://static.wixstatic.com/media/2afab7_c86a8804b5724d3d81392928e1a150c1~mv2.png/v1/fill/w_560,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/NTVG%20LOGO%202021.png" alt="Logo">  
+            <div id="menu" class="lg:flex lg:flex-row lg:justify-center text-center">
+                <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 lg:ml-8 lg:mr-4 text-white hover:text-slate-500">
+                    Inicio
+                </a>
+                <a href="add-album/add-album.html" class="block mt-4 lg:inline-block lg:mt-0 lg:mr-4 text-white hover:text-slate-500">
+                    Agregar Album
+                </a>
+                <a href="tours.html" class="block mt-4 lg:inline-block lg:mt-0 lg:mr-4 text-white hover:text-slate-500">
+                    Tours y Fechas
+                </a>
+                <a href="login.html" class="block mt-4 lg:inline-block lg:mt-0 lg:mr-4 text-white hover:text-slate-500">
+                    Cerrar Sesión
+                </a>
+            </div>
+        </div>
+        <div class="block contents sm:hidden">
+        <button id="boton" class="lg:ml-4 mt-4 lg:mt-0 flex items-center px-3 py-2 border rounded text-white border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+        </div>
+    </nav>
+    <div>
+        <div class="pl-4 pt-4">
+            <h1 class="font-medium text-black text-6xl text-center sm:text-justify">No Te Va Gustar</h1>
+            <p class="text-center text-justify sm:text-justify pt-2 pr-4 sm:w-4/6"><strong>No Te Va Gustar</strong> (popularmente abreviada y estilizada como <strong>NTVG</strong>) es un grupo musical de Uruguay formado el 25 de junio del año 1994 en Montevideo. El grupo musical está integrado por Emiliano Brancciari (voz y guitarra), Guzmán Silveira (bajo y coros), Diego Bartaburu (batería), Martín Gil (trompeta y coros), Denis Ramos (trombón y coros), Mauricio Ortiz (saxofón barítono y tenor), Pablo Coniberti (guitarra y coros) y Francisco Nasser (teclados, coros y guitarra).</p>
+        </div>
+            <div class="text-6xl pl-4 pt-4 font-medium">
+                <h1 class="text-center sm:text-justify">Albums</h1>
+            </div>
+            <div id="albumContainer" class="flex flex-col items-center pl-4 sm:grid grid-cols-3">
+            </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+    <script src="navbar.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Te Va Gustar - Albums</title>
+</head>
+<body class="body-all bg-cover bg-no-repeat">
+    <nav class="flex flex-col lg:flex-row items-center justify-between bg-neutral-950 p-2 shadow-2xl">
+        <div class="flex flex-col lg:flex-row items-center">
+            <img class="lg:w-1/6 w-1/4" src="https://static.wixstatic.com/media/2afab7_c86a8804b5724d3d81392928e1a150c1~mv2.png/v1/fill/w_560,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/NTVG%20LOGO%202021.png" alt="Logo">  
+            <div id="menu" class="lg:flex lg:flex-row lg:justify-center text-center">
+                <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 lg:ml-8 lg:mr-4 text-white hover:text-slate-500">
+                    Inicio
+                </a>
+                <a href="add-album.html" class="block mt-4 lg:inline-block lg:mt-0 lg:mr-4 text-white hover:text-slate-500">
+                    Agregar Album
+                </a>
+                <a href="tours.html" class="block mt-4 lg:inline-block lg:mt-0 lg:mr-4 text-white hover:text-slate-500">
+                    Tours y Fechas
+                </a>
+                <a href="login.html" class="block mt-4 lg:inline-block lg:mt-0 lg:mr-4 text-white hover:text-slate-500">
+                    Cerrar Sesión
+                </a>
+            </div>
+        </div>
+        <div class="block contents sm:hidden">
+        <button id="boton" class="lg:ml-4 mt-4 lg:mt-0 flex items-center px-3 py-2 border rounded text-white border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+        </div>
+    </nav>
+        <div>
+            <div class="pl-4 pt-4">
+                <h1 id="album" class="pb-2 font-medium text-black text-6xl text-center sm:text-justify"></h1>
+                <p id="descripcion" class="text-center text-justify sm:text-justify pr-4 sm:w-4/6"></p>
+            </div>
+            <h1 class="font-medium text-6xl pl-4 pt-4 mb-1 text-center sm:text-justify">Canciones</h1>
+            <div class="flex flex-col justify-center items-center sm:justify-start sm:items-start">
+                <div id="contenedorDeCanciones" class="text-white w-4/5 pl-4">
+                </div>
+                <div class="ml-4 mt-2 p-1 border-solid rounded bg-transp text-white text-center">
+                    <a id="add-song" href="">Agregar Canción</a>
+                </div>
+                <div class="ml-4 mt-2 p-1 border-solid rounded bg-transp text-white text-center">
+                    <a id="delete-album" href="">Eliminar album</a>
+                </div>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="navbar.js"></script>
+    <script src="getSongs.js"></script>
+</body>
+</html>
